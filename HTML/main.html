@@ -1,0 +1,221 @@
+<style>
+    #winter{
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 90px;
+        font-weight: 900;
+        color: transparent;
+        background-image: url(https://media.giphy.com/media/BDucPOizdZ5AI/giphy.gif);
+        background-position: center;
+        -webkit-background-clip: text;
+    }
+
+    #summer{
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 90px;
+        font-weight: 900;
+        color: transparent;
+        background-image: url(https://media.giphy.com/media/vadsqiBwAM18c/giphy.gif);
+        background-position: center;
+        -webkit-background-clip: text;
+    }
+
+    #monsoon{
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 90px;
+        font-weight: 900;
+        color: transparent;
+        background-image: url(https://media.giphy.com/media/3o7btWO4T2Wp97lbgc/giphy.gif);
+        background-position: center;
+        -webkit-background-clip: text;
+    }
+
+    #post_monsoon{
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 15px;
+        font-size: 90px;
+        font-weight: 900;
+        color: transparent;
+        background-image: url(https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif);
+        background-position: center;
+        -webkit-background-clip: text;
+    }
+
+    .rotate {
+        animation: rotation 6s infinite linear;
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        } 
+        
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+/* customizable snowflake styling */
+.snowflake {
+  color: #fff;
+  font-size: 2.5em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+/* Demo Purpose Only*/
+.demo {
+  font-family: 'Raleway', sans-serif;
+	color:rgb(162, 189, 214);
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+}
+.demo a {
+    font-family: 'Raleway', sans-serif;
+    color: #000;		
+}
+
+
+.containerant1
+{ 
+    display: flex; 
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.box1
+{
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+}
+    
+.box1 > img
+{
+    width: 200%;
+    height: calc(100% - 12vh);
+    object-fit: cover;
+    transition: .5s;
+}
+
+.box1 > span
+{
+    font-size: 16;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    display: block;
+    text-align: center;
+    height: 10;
+    line-height: 5;
+    background-color: rgb(83, 38, 206);
+    color: rgb(83, 38, 206);
+}
+
+.box1:hover
+{
+    flex: 1 1 50%;
+}
+
+.box1:hover > img
+{
+    width: 100%;
+    height: 100%;
+}
+
+</style>
+
+<body>
+
+    <h1 id="winter"> W I N T E R </h1>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake"> ❅ </div>
+        <div class="snowflake"> ❅ </div>
+        <div class="snowflake"> ❆ </div>
+        <div class="snowflake"> ❄ </div>
+        <div class="snowflake"> ❅ </div>
+        <div class="snowflake"> ❆ </div>
+        <div class="snowflake"> ❄ </div>
+        <div class="snowflake"> ❅ </div>
+        <div class="snowflake"> ❆ </div>
+        <div class="snowflake"> ❄ </div>
+    </div>
+    <img src="5.png" style="width: 100%; height: 100%; justify-content: center;">
+    <h1 style="text-align: center; padding-top: 21; font-weight: 700;"> Do you remember these wonderful memories, we celebrated together? </h1>
+    <div class="containerant1">
+        <div class="box1">
+            
+            <img src="onam-p.jpg" width="291" height="250">
+            <span>O N A M</span>
+        </div>
+        
+        <div class="box1">
+            <img src="Maha-Shivratri-p.jpg">
+            <span>M A H A - S H I V A R A T R I</span>
+        </div>
+        
+        <div class="box1">
+            <img src="Holi-p.jpg">
+            <span>H O L I</span>
+        </div>
+        
+        <div class="box1">
+            <img src="ugadi-p.jpg">
+            <span>U G A D I</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <h1 id="summer"> S U M M E R </h1>
+    <div style="text-align: center; margin-bottom: 20;">
+        <img class="rotate" src="sun.png" style="width: 150px; height: 150px; justify-content: center;">
+    </div>
+    <img src="2.png" style="width: 100%; height: 100%; margin-left: 1; margin-right: 1; justify-content: center;">
+
+
+    <h1 id="monsoon"> M O N S O O N </h1>
+
+    <marquee direction="down" width="1250px" height="200px" behavior="scroll" style="border: darkorange" scrollamount="15" scrolldelay="60">
+        <marquee behavior="alternate" scrolldelay="30">
+        <img src="drop.png" style="width: 100px; height: 100px; justify-content: center;"></marquee>
+    </marquee>
+
+    <img src="3.png" style="width: 100%; height: 100%; justify-content: center;">
+
+    <label style=" line-height: 2; font-size: 21; font-family:Georgia, 'Times New Roman', Times, serif"> <p style="float: left; width: 0.7em; font-size: 300%; font-family: algerian, courier; line-height: 21%;"> K </p> <b> rishna Janmashtami </b> is the birthday of Lord Krishna which is celebrated across India. It is also known as <label style="color: rgb(19, 19, 185); font-style: italic;"> <b> Gokulashtami </b> </label> or <label style="color: rgb(19, 19, 185); font-style: italic;"> <b> Janmashtami. </b> </label> According to the Hindu Calendar, this day falls on the eight day known as Ashtami of the Krishna Paksha in the month of Sravaana. The verses in the Bhagavad-Gita (a sacred book narrated by Lord Vishnu) say, that whenever there will be predominance of evil and decline of religion, I will reincarnate to kill the evil and to save the good. The main significance of Janmashtami is to encourage goodwill and to discourage bad will. Krishna Jayanti also celebrates togetherness. The holy occasion brings people together, thus it signifies unity and faith. </label>
+    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; color: red;"> &nbsp; Interesting Activities you can do this Janmashtami >> </h2>
+
+    <ul style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 21; line-height: 1.5;">
+        <li> Make your own personalised e-card on the holy occasion of janmashtami and e-mail to your family and friends.</li>
+        <li> Tell your child a story of Krishna's birth to teach them the significance of Gokulashtami.</li>
+        <li> Go in the nearest temple with your family members and perform puja and eat Prasad.</li>
+        <li> Enjoy the food delicacies like fruits, milk, curd and all kinds of sweets including ladoos and burfis.</li>
+        <li> Worship wholeheartedly for the wellbeing of yourself and your family. If you are keen on fasting, fast until midnight.</li>
+    </ul>
+
+    <img src="krishna.jpg" style="display: block; margin-left: auto; margin-right: auto; height: 50%;">
+
+    <h1 id="post_monsoon"> P O S T - M O N S O O N </h1>
+
+    <marquee direction="down" width="1250" height="220" behavior="alternate">
+        <marquee behavior="alternate">
+            <img src="cloud.png" style="width: 150px; height: 150px; justify-content: center;"></marquee>
+        </marquee>
+      </marquee>
+
+    <img src="4.png" style="width: 100%; height: 100%; justify-content: center;">
+</body>
